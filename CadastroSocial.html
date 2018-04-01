@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8" />
+    <title>Projeto Cadastro - Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    
+</head>
+
+<body>
+
+ 	<div class="container">
+    <form>
+        <div class="row">
+            <div class="col-sm" align="center"<br><br>
+            <h1 class="cadastro-social">Cadastro social</h1>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="container">
+        <div class="p-3 mb-2 bg-dark text-white">Preencha com suas informações pessoais</div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="container-secondary">
+                        <div class="alert alert-secondary" role="alert">
+                        <form>
+                            <div class="row">
+
+                                <div class="form-group col-md-12">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" name="nome" placeholder="Seu nome completo" />
+                                </div>
+
+                                <div class="form-group col-md-4">
+                                <label for="cpf">CPF</label>
+                                <input type="text" class="form-control" name="cpf" placeholder="000.000.000-00" />
+                                </div>
+
+                                <div class="form-group col-md-4">
+                            	<label for="date_nascimento">Data de Nascimento</label>
+                                <input type="text" class="form-control" placeholder="__/__/____" />
+                                </div>
+                                    
+                                <div class="form-check col-md-4">
+                            	<label for="sex">Sexo</label><br>
+                                <input type="radio" style="margin-left: 0px; margin-top: 10px;" class="form-check-input" name="masculino" value="M" />
+                                <label for="masculino" style="margin-left: 20px; margin-top: 5px;" class="form-check-label">Masculino</label>
+                                <input type="radio" style="margin-left: 10px; margin-top: 10px;" class="form-check-input" name="feminino" value="F" />
+                                <label for="feminino" style="margin-left: 30px; margin-top: 5px;" class="form-check-label">Feminino</label>
+                            	</div>
+
+                                <div class="form-group col-md-6">
+                            	<label for="estado_civil">Estado Civil</label>
+                                    <select class="custom-select" name="estado-civil" id="estado-civil">
+                                    <option value="so">Solteiro(a)</option>
+                                    <option value="ca">Casado(a)</option>
+                                	<option value="di">Divorciado(a)</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                            	<label for="renda">Renda Mensal R$</label>
+                                <input type="text" class="form-control" placeholder="0.00">
+                                </div>
+
+                                <div class="col-md-12">    
+                            	<h5>Endereço</h5>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                            	<label for="Logradouro">Logradouro</label>
+                                <input type="text" class="form-control" placeholder="Logradouro">
+                                </div>
+
+                            	<div class="form-group col-md-3">
+                            	<label for="numero">Numero</label>
+                                <input type="numero" class="form-control" placeholder="N°">
+                                </div>
+
+                            	<div class="form-group col-md-3">
+                            	<label for="complemento">Complemento</label>
+                                <input type="text" class="form-control" placeholder="Complemento">
+                                </div>
+
+                            	<div class="form-group col-md-6">
+                            	<label>Estado</label>
+                                    <select class="custom-select" name="estado" id="estado">
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantis</option>
+                                	</select>
+                                </div>
+
+                            	<div class="form-group col-md-6">
+                            	<label for="cidade">Cidade</label>
+                                <input type="text" class="form-control" placeholder="Cidade">
+                                </div>
+
+                            </div>
+                        </form>
+                        </div>  
+                    </div>    
+                <button type="button" class="btn btn-dark btn-sm"">Cadastrar</button>
+                <button type="button" class="btn btn-grey btn-sm"">Limpar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
